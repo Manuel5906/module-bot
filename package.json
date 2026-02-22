@@ -16,7 +16,7 @@
     "src"
   ],
   "scripts": {
-    "build": "npx esbuild src/index.js --bundle --platform=node --format=cjs --outfile=dist/index.cjs",
+    "build": "npx esbuild src/index.js --bundle --platform=node --format=cjs --outfile=dist/index.cjs && npx javascript-obfuscator dist/index.cjs --output dist/index.cjs --compact true --self-defending true --string-array true --string-array-encoding base64 --control-flow-flattening true --unicode-escape-sequence true",
     "prepublishOnly": "npm run build"
   },
   "keywords": [
@@ -30,7 +30,8 @@
   "author": "darkcore",
   "license": "MIT",
   "devDependencies": {
-    "esbuild": "^0.27.3"
+    "esbuild": "^0.27.3",
+    "javascript-obfuscator": "^5.3.0"
   },
   "dependencies": {
     "axios": "^1.13.5"
