@@ -1,5 +1,5 @@
 {
-  "name": "mi-api-wrapper",
+  "name": "darkcore-api",
   "version": "1.0.0",
   "description": "Un wrapper híbrido (ESM/CJS) para obtener imágenes aleatorias de animales.",
   "type": "module",
