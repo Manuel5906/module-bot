@@ -1,6 +1,6 @@
-import { getAnimal, endpoints } from './services/animals.js';
-import { getYouTubeMP3 } from './services/youtube.js';
-import { getWelcomeImage } from './services/canvas.js';
+import { getAnimal, endpoints } from './src/services/animals.js';
+import { getYouTubeMP3 } from './src/services/youtube.js';
+import { getWelcomeImage } from './src/services/canvas.js';
 
 // Exportación para ES Modules (import)
 export {
