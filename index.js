@@ -2,7 +2,7 @@ import { getAnimal, endpoints } from './src/services/animals.js';
 import { getYouTubeMP3 } from './src/services/youtube.js';
 import { getWelcomeImage } from './src/services/canvas.js';
 
-// Exportación para ES Modules (import)
+// Esto permite que funcione con: import { getAnimal } from 'darkcore-api'
 export {
   getAnimal,
   endpoints,
@@ -10,7 +10,7 @@ export {
   getWelcomeImage
 };
 
-// Exportación por defecto para compatibilidad
+// Esto permite que funcione con: const api = require('darkcore-api')
 export default {
   getAnimal,
   endpoints,
